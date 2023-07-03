@@ -9,7 +9,8 @@ body {
   font-size: 14px;
 }
 .logo {
-  margin-top: 54px;
+  margin-bottom: 42px;
+  margin-top: 57px;
   display: flex;
   justify-content: center;
 }
@@ -20,6 +21,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   max-width: 280px;
+  margin-bottom: 214px;
 }
 
 @media (min-width: 576px) {
@@ -67,6 +69,8 @@ p {
 .form_sections {
   display: flex;
   flex-direction: column;
+  margin-inline: auto;
+  max-width: 58rem;
 }
 .label {
   display: flex;
@@ -84,6 +88,7 @@ select {
 option:checked,
 option:hover {
   background-color: #ececec;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -112,7 +117,8 @@ button {
   height: 48px;
   border: none;
   color: white;
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
 }
 .form_buttons {
   display: flex;
