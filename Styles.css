@@ -106,7 +106,12 @@ select {
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
   appearance: none !important;
-  padding-right: 2rem !important;
+}
+#datetimepicker :focus {
+  outline: 0;
+}
+button :hover {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
