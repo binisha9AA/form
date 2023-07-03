@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./Styles.css">
 
-
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <main>
         <div class="container">
             <div class="logo">
                 <img src="./Image//image 2.png" alt="">
@@ -66,23 +65,23 @@
                 <section class="form_sections">
                     <div class="label">
                         <label>Delivery Date</label>
-                        <input type="input" name="" id="datetimepicker" placeholder="Select Time Range" readonly>
+                        <input type="date" name="" id="datetimepicker" placeholder="Select Time Range" readonly>
                     </div>
                     <div class="label">
                         <label>Delivery Time Range</label>
-                        <select name="">
+                        <select name="cars" id="cars">
                             <option value="" disabled selected>Select Time Range</option>
                             <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
 
                         </select>
-                        <div class="label">
+                    </div>
                 </section>
                 <section class="form_sections">
                     <div class="label">
                         <label>Notification Medium</label>
-                        <select name="">
+                        <select name="cars" id="cars">
                             <option value="" disabled selected>Select Notification Medium</option>
                             <option value="SMS">SMS</option>
                             <option value="Email">Email</option>
@@ -92,14 +91,12 @@
                     </div>
                     <div class="label">
                         <label>Postal Code</label>
-                        <select name="">
+                        <select name="cars" id="cars">
                             <option value="" disabled selected>Enter Postal Code</option>
                             <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
-
                         </select>
-                        <div class="label">
                 </section>
 
                 <div class="form_buttons">
@@ -112,12 +109,13 @@
                 </div>
             </form>
         </div>
-    </div>
+    </main>
     <script>
         $('#datetimepicker').datepicker({
             dateFormat: "yy-mm-dd",
             beforeShowDay: enableSelectedDatesAndDisableWeekends
         });
+
         function enableSelectedDatesAndDisableWeekends(date) {
             // var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
             return [date.getDay() !== 0 && date.getDay() !== 6];
