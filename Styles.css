@@ -80,7 +80,7 @@ input,
 select {
   min-width: 175px;
   padding: 12px;
-  text-indent: 17px;
+
   font-size: 14px;
   font-weight: 400px;
   line-height: 22px;
@@ -89,6 +89,24 @@ option:checked,
 option:hover {
   background-color: #ececec;
   cursor: pointer;
+}
+select {
+  background: url('./Image/CaretDown.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.75rem) center !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  padding-right: 2rem !important;
+}
+#datetimepicker {
+  background: url('./Image/CalendarBlank.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.75rem) center !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  padding-right: 2rem !important;
 }
 
 @media (min-width: 768px) {
