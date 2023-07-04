@@ -23,7 +23,9 @@ body {
   max-width: 280px;
   margin-bottom: 214px;
 }
-
+fieldset {
+  border: none;
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -97,7 +99,7 @@ select {
   border: 1px solid black;
 }
 select option {
-  font-family: inherit;
+  font-family: inherit !important ;
   color: black;
   line-height: 3;
   padding: 10px;
