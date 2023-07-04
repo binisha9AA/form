@@ -85,11 +85,7 @@ select {
   font-weight: 400px;
   line-height: 22px;
 }
-option:checked,
-option:hover {
-  background-color: #ececec;
-  cursor: pointer;
-}
+
 select {
   background: url('./Image/CaretDown.svg');
   background-repeat: no-repeat;
@@ -98,6 +94,10 @@ select {
   -webkit-appearance: none !important;
   appearance: none !important;
   padding-right: 2rem !important;
+}
+option:hover {
+  background-color: #ececec;
+  cursor: pointer;
 }
 #datetimepicker {
   background: url('./Image/CalendarBlank.svg');
