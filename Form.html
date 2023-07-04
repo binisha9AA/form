@@ -119,7 +119,6 @@
         });
 
         function enableSelectedDatesAndDisableWeekends(date) {
-            // var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
             return [date.getDay() !== 0 && date.getDay() !== 6];
         }
         $(document).ready(function () {
@@ -127,6 +126,8 @@
                 $(this).toggleClass('open');
             });
         })
+
+
     </script>
 </body>
 
