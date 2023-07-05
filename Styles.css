@@ -239,8 +239,29 @@ tr {
   }
 }
 @media (min-width: 788px) and (max-width: 964px) {
+  .form_sections {
+    display: flex;
+    justify-content: center;
+  }
   .form_buttons {
     display: flex;
     justify-content: left;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+  .form_sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form_buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 530px) and (max-width: 563px) {
+  .select2-container {
+    width: 280px !important;
   }
 }
