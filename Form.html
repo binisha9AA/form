@@ -8,7 +8,8 @@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./Styles.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -18,7 +19,6 @@
             <div class="logo">
                 <img src="./Image//image 2.png" alt="">
             </div>
-
             <h1>
                 Order Products From Maxim With Ease!
             </h1>
@@ -40,11 +40,9 @@
                             <label>School's Complete Address</label>
                             <input type="text" name="" id="" placeholder="Enter School's Address">
                         </div>
-
                     </fieldset>
                     <fieldset class="form_sections">
                         <div class="label">
-
                             <label>School's Email Address</label>
                             <input type="text" name="" id="" placeholder="Enter School's Email Address">
                         </div>
@@ -68,46 +66,38 @@
                             <label>Delivery Date</label>
                             <input type="text" name="" id="datetimepicker" placeholder="Select Delivery Date" readonly
                                 onfocus="(this.type='date')">
-
                         </div>
                         <div class="label">
                             <label>Delivery Time Range</label>
-                            <select name="range">
+                            <select id="range">
                                 <option value="" disabled selected>Select Time Range</option>
                                 <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
                                 <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
                                 <option value="evening">Evening (3:00 PM - 6:00 PM)</option>
                                 <option value="night">Night (6:00 PM - 9:00 PM)</option>
-
                             </select>
                         </div>
                     </fieldset>
                     <fieldset class="form_sections">
                         <div class="label">
                             <label>Notification Medium</label>
-                            <select name="notification">
+                            <select id="notification">
                                 <option value="" disabled selected>Select Notification Medium</option>
                                 <option value="SMS">SMS</option>
                                 <option value="Email">Email</option>
                                 <option value="Both">Both</option>
-
                             </select>
                         </div>
                         <div class="label">
                             <label>Postal Code</label>
-                            <input type="text" name="code" list="postalCodes" placeholder="Enter Postal Code"
-                                autocomplete="off">
-
-                            <datalist id="postalCodes">
+                            <select id="postalCodes">
                                 <option value="10001">10001</option>
                                 <option value="20002">20002</option>
                                 <option value="30003">30003</option>
                                 <option value="40004">40004</option>
-                            </datalist>
-
+                            </select>
                         </div>
                     </fieldset>
-
                     <div class="form_buttons">
                         <button class="button btn_Cancel">
                             Cancel
@@ -125,7 +115,6 @@
             dateFormat: "yy-mm-dd",
             beforeShowDay: enableSelectedDatesAndDisableWeekends
         });
-
         function enableSelectedDatesAndDisableWeekends(date) {
             return [date.getDay() !== 0 && date.getDay() !== 6];
         }
@@ -133,9 +122,20 @@
             $('select').click(function () {
                 $(this).toggleClass('open');
             });
+            $('#postalCodes').select2();
         })
-
-
+        $(document).ready(function () {
+            $('select').click(function () {
+                $(this).toggleClass('open');
+            });
+            $('#notification').select2();
+        })
+        $(document).ready(function () {
+            // $('select').click(function () {
+            //     $(this).toggleClass('open');
+            // });
+            $('#range').select2();
+        })
     </script>
 </body>
 
