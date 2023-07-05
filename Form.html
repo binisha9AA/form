@@ -95,13 +95,16 @@
                         </div>
                         <div class="label">
                             <label>Postal Code</label>
-                            <select name="code">
-                                <option value="" disabled selected>Enter Postal Code</option>
+                            <input type="number" name="code" list="postalCodes" placeholder="Enter Postal Code"
+                                autocomplete="off">
+
+                            <datalist id="postalCodes">
                                 <option value="10001">10001</option>
                                 <option value="20002">20002</option>
                                 <option value="30003">30003</option>
                                 <option value="40004">40004</option>
-                            </select>
+                            </datalist>
+
                         </div>
                     </fieldset>
 
