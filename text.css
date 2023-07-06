@@ -11,3 +11,10 @@ button {
   border: none;
   /* border-radius: 12px; */
 }
+thead {
+  background-color: #e7e7e7;
+  color: black;
+}
+table.dataTable {
+  margin-top: 12px;
+}
