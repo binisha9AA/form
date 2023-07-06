@@ -88,6 +88,11 @@ select {
   line-height: 22px;
 }
 
+tfoot input {
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+}
 select {
   background: url('./Image/CaretDown.svg');
   background-repeat: no-repeat;
