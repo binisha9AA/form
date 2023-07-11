@@ -8,55 +8,80 @@
     <style>
         table {
             border-collapse: collapse;
-
-            margin-top: 60px;
+            width: 500px;
+            height: 700px;
+            margin-inline: auto;
+            margin-block: 60px;
         }
 
-        td,
-        th {
+        td {
             border: none;
-            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+        }
+
+        tbody tr td {
+            padding-inline: 30px;
+            padding-block: 10px;
         }
 
         table.outer-border {
-            border: 1px solid black;
+            border: 2px solid black;
         }
     </style>
 </head>
 
 <body>
     <table class="outer-border" cellspacing="0" width="100%">
-        <tr>
-            <th><img src="" alt=""></th>
-        </tr>
-        <tr>
-            <td>Karyn Alder-ton,</td>
-        </tr>
-        <tr>
-            <td>Welcome to Toolfix Fasteners.</td>
-        </tr>
-        <tr>
-            <td>To sign in to our site, please use the below link.</td>
-        </tr>
-        <tr>
-            <td>Account Credentials</td>
-        </tr>
-        <tr>
-            <td>Email: karyn@toolfix.com.au</td>
+        <thead>
+            <tr>
+                <th><img src="./Image/Toolfix email header.jpg" alt=""></th>
+            </tr>
+        </thead>
+        <tbody style="padding: 20px;">
+            <tr>
+                <td style="font-size: 18px; font-weight: bold;">Karyn Alder-ton,</td>
+            </tr>
+            <tr>
+                <td>Welcome to Toolfix Fasteners.</td>
+            </tr>
+            <tr>
+                <td>To sign in to our site, please use the below link.</td>
+            </tr>
+            <tr>
+                <td>https://.toolfix.com.au/login/td>
+            </tr>
+            <tr>
+                <td>Account Credentials</td>
+            </tr>
+            <tr>
+                <td>Email: karyn@toolfix.com.au</td>
 
-        </tr>
-        <tr>
-            <td>Password: Password you set when registering for an account</td>
-        </tr>
-        <tr>
-            <td>Account ID: 1285</td>
-        </tr>
-        <tr>
-            <td>Thank you!</td>
-        </tr>
-        <tr>
-            <td>Toolfix Fasteners</td>
-        </tr>
+            </tr>
+            <tr>
+                <td>Password: Password you set when registering for an account</td>
+            </tr>
+            <tr>
+                <td>Account ID: 1285</td>
+            </tr>
+            <tr>
+                <td>Thank you!</td>
+            </tr>
+            <tr>
+                <td>Toolfix Fasteners</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <img src="./Image/Email footer.jpg" alt="">
+                </td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
