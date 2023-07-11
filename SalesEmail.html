@@ -4,18 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,200;1,500&display=swap');
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+
         table {
             border-collapse: collapse;
-            width: 500px;
+            max-width: 500px;
             height: 800px;
             margin-inline: auto;
-            margin-block: 60px;
+
+
+        }
+
+        table tbody {
+            margin-top: 12px;
         }
 
         td {
             border: none;
+
         }
 
         img {
@@ -26,7 +39,48 @@
 
         tbody tr td {
             padding-inline: 40px;
-            padding-block: 10px;
+            font-weight: 500;
+        }
+
+        td {
+            font-size: 16px;
+        }
+
+        tr:nth-child(1) {
+            height: 20px;
+
+        }
+
+        tr:nth-child(2) {
+            height: 22px;
+        }
+
+        tr:nth-child(3) {
+            height: 22px;
+        }
+
+        tr:nth-child(4) {
+            height: 22px;
+        }
+
+        tr:nth-child(5) {
+            height: 22px;
+        }
+
+        tr:nth-child(6) {
+            height: 10px;
+        }
+
+        tr:nth-child(7) {
+            height: 22px;
+        }
+
+        tr:nth-child(8) {
+            height: 16px;
+        }
+
+        tr:nth-child(9) {
+            height: 12px;
         }
 
         table.outer-border {
@@ -42,9 +96,9 @@
                 <th><img src="./Image/Toolfix email header.jpg" alt=""></th>
             </tr>
         </thead>
-        <tbody style="padding: 20px;">
+        <tbody>
             <tr>
-                <td style="font-size: 18px; font-weight: bold;">Karyn Alder-ton,</td>
+                <td style="font-size: 20px; font-weight: 500;">Karyn Alderton,</td>
             </tr>
             <tr>
                 <td>Welcome to Toolfix Fasteners.</td>
@@ -59,21 +113,22 @@
                 <td>Account Credentials</td>
             </tr>
             <tr>
-                <td>Email: karyn@toolfix.com.au</td>
+                <td>Email: karyn@toolfix.com.au<br>
+                    Password: <span style="font-style: italic; font-weight: 500;">Password you set when registering
+                        for an account</span>
+                </td>
 
             </tr>
-            <tr>
-                <td>Password: Password you set when registering for an account</td>
-            </tr>
+
             <tr>
                 <td>Account ID: 1285</td>
             </tr>
             <tr>
-                <td>Thank you!</td>
+                <td>Thank you! <br>Toolfix Fasteners</td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td>Toolfix Fasteners</td>
-            </tr>
+            </tr> -->
         </tbody>
         <tfoot>
             <tr>
