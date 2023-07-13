@@ -160,9 +160,9 @@ h3 {
     left: 5%;
   }
 }
-@media (min-height: 380px) {
+/* @media (min-height: 380px) {
   h3 {
     position: absolute;
     top: 20%;
   }
-}
+} */
